@@ -51,7 +51,7 @@ def create(request):
     else:
         form = BoardForm()
     context = {'form': form }
-    return render(request, 'boards/forms.html', context)
+    return render(request, 'boards/form.html', context)
 
 
 
@@ -112,6 +112,6 @@ def update(request, board_pk):
         'form':form,
         'board': board,
     }
-    return render(request, 'boards/forms.html', context)
+    return render(request, 'boards/form.html', context)
         
     
